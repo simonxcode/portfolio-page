@@ -1,0 +1,277 @@
+body {
+    margin: 15px auto;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "navbar navbar"
+        "hero hero"
+        "profile about"
+        "project-head project-head"
+        "project1 project1-desc"
+        "hr-break-1 hr-break-1"
+        "project2 project2-desc"
+        "hr-break-2 hr-break-2"  
+        "project3 project3-desc"
+        "contact contact"
+        "footer footer"
+}
+
+.nav {
+    grid-area: navbar;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    background-color: lightgray;
+    text-align: right; 
+    z-index: 999;
+}
+
+.nav a {
+    display: inline-block; /* too keep a tags in order */
+    padding: 1.5em;
+    text-decoration: none; 
+    font-weight: bold;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.nav a:first-child {
+    float: left;
+}
+
+a:visited {
+    color: black;
+}
+
+.nav a:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.nav .icon {
+    display: none; 
+}
+
+@media (min-width: 320px) and (max-width: 480px) { 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "navbar"
+        "headline"
+        "profile"
+        "about"
+        "project-head"
+        "project1"
+        "project1-desc"
+        "hr-break-1"
+        "project2"
+        "project2-desc"
+        "hr-break-2"  
+        "project3"
+        "project3-desc"
+        "contact"
+        "footer"
+    }
+    .nav a:not(:first-child) {
+        display: none;  /* hide all link beside brand when screen is lesss than 550 px */
+    }
+    .nav a.icon {
+        color: black;
+        float: right;
+        display: block; /* show hamburger icon */
+    }
+    .profile {
+        margin-top: 175px; /* properly align profile with navbar */
+    }
+    .nav.responsive {
+        position: fixed;
+    }
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }  
+    .grid-container {
+        height: 100vh;
+    } 
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.headline {
+    grid-area: headline;
+}
+
+.profile {
+    grid-area: profile;
+    background-color: lightgray;
+}
+
+.about {
+    grid-area: about;
+    background-color: lightgray;    
+}
+
+.project-head {
+    grid-area: project-head;
+}
+
+.heading {
+    text-shadow: 2px 2px 5px grey;    
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project1 li {
+    list-style: none;
+    vertical-align: middle;
+}
+
+.tech-stack > ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.project1-desc {
+    grid-area: project1-desc;
+}
+
+.project1-desc a {
+    grid-area: project1-desc;
+}
+
+.hr-break-1 {
+    grid-area: hr-break-1;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75), rgba(0, 0, 0, 0));
+}
+
+.hr-break-2 {
+    grid-area: hr-break-2;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75), rgba(0, 0, 0, 0));
+}
+
+.project2 { 
+    grid-area: project2;
+}
+
+.project2-desc {
+    grid-area: project2-desc;
+}
+.project3 {
+    grid-area: project3;
+}
+
+.project3-desc {
+    grid-area: project3-desc;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: lightgray;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+p {
+    padding: 0 1.5em;
+}
+
+.footer li {
+    list-style: none;
+}
+
+/* images */
+#hero-image {
+    width: 100%;
+    min-height: 400px;
+}
+
+.headline {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width:50%;
+    background-color: black;
+    color: lightgray;
+}
+
+#profile-image {
+    border-radius: 50%;
+    max-width: 30%;
+    height: auto;
+    padding: 25px;
+}
+
+.project-image {
+    border-radius: 15px;
+    max-width: 75%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* social icons */
+.contact i {
+    font-size: 2.0em;
+}
+
+.fa-linkedin-in:hover {
+    color: lightskyblue
+}
+
+.fa-github:hover {
+    color: lightskyblue
+}
+
+.fa-twitter:hover {
+    color: lightskyblue
+}
+
+
+
+
+
+
+
+
+
+
