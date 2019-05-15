@@ -8,7 +8,8 @@
         <title>Simon Xiong's Portfolio</title>
     </head>
     <body>
-        <div class="grid-container"><!-- wrapper start -->
+        <!-- wrapper start -->
+        <div class="grid-container">
             <div class="nav" id="topNav">    
                 <a id="brand">SIMON'S PORTFOLIO</a>
                 <a href="#profile">PROFILE</a>
@@ -21,83 +22,111 @@
             <div class="hero">
                 <img id="hero-image" src="images/skyline.jpg" alt="LA skyline">
                 <div class="headline">
-                    <h3>Hi my name is Simon. I am a full-stack web developer.<h3>
+                    <h3>Hi my name is Simon. I am a fullstack web developer.<h3>
                 </div>
             </div>
             <div id="profile" class="profile">
-                <img id="profile-image" src="images/profile-pic.jpg" alt="avatar">
+                <img id="profile-image" src="images/profilePic.jpg" alt="avatar">
             </div>
             <div class="about">
                 <h3 class="heading">ABOUT ME</h3>
-                <p>Simon is a JavaScript web-developer based in Los Angeles. His focus is creating React and React-Native applications for a wide-range of business needs.</p>
+                <p>The ability to bring a life changing idea to reality through computer application is what intrigue me.
+                    My current focus is developing React applications to enrich the lives of individuals and businesses
+                </p>
             </div>
             <div id="project-head" class="project-head"><h3 class="heading">PROJECTS</h3></div>
-            <div class="project1">
-                <h3>Chirpper</h3>
-                <a href="https://chingu-chirpper.herokuapp.com/timeline/chingu" target="_blank">
-                    <img class="project-image" src="images/chingu-timeline.jpg" alt="chingu-timeline">
-                </a>
-                <a href="https://github.com/chingu-voyage5/Geckos-Team-16" target="_blank">
-                    <p>Github Repo</p>
-                </a>
-            </div>
-            <div class="project1-desc">
-                <h3>Summary</h3>
-                <p>Chirpper is a Twitter clone that was developed within a remote cohort team. The primary methodologies used was a RESTful API with CRUD funtionality.</p>
-                <div class="tech-stack">
-                    <h3>Technologies</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>Mongo</li>
-                    </ul>
+                <!-- Project 1 -->
+                <div class="project1">
+                    <h3>Tic Tac Toe Game</h3>
+                    <a href="https://simonxcode.github.io/tictactoe-react/" target="_blank">
+                        <img class="project-image" src="images/ticTacToe.jpg" alt="tictactoe game photo">
+                    </a>
+                    <a href="https://github.com/simonxcode/tictactoe-react" target="_blank">
+                        <p>Github Repo</p>
+                    </a>
                 </div>
-            </div>
-            <div class="hr-break-1"></div>
-            <div class="project2">
-                <h3>The Color Game</h3>
-                <a href="https://simonxcode.github.io/colorGame/" target="_blank">
-                    <img class="project-image" src="images/color-game.jpg" alt="color-game">
-                </a>
-                <a href="https://github.com/simonxcode/colorGame" target="_blank"> 
-                    <p>Github Repo</p>
-                </a>
-            </div>
-            <div class="project2-desc">
-                <h3>Summary</h3>
-                <p>The objective of the Color Game is to select the correct square that matches the RGB color values.</p>
-                <div class="tech-stack">
-                    <h3>Technologies</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                    </ul>
+                <div class="project1-desc">
+                    <h3>Summary</h3>
+                    <p>The classic paper-and-pencil game where user have to match 3 in-a-row to win.</p>
+                    <div class="tech-stack">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React JS</li>
+                            <li>Material-UI</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="hr-break-2"></div> 
-            <div class="project3">
-                <h3>TicTacToe Game</h3>
-                <a href="https://simonxcode.github.io/colorGame/" target="_blank">
-                    <img class="project-image" src="images/tictactoe.jpg" alt="tictactoe-game">
-                </a>
-                <a href="https://github.com/simonxcode/tictactoe-react" target="_blank">
-                    <p>Github Repo</p>
-                </a>    
-            </div>
-            <div class="project3-desc">
-                <h3>Summary</h3>
-                <p>The classic paper-and-pencil game written in React and styled with Material-UI.</p>
-                <div class="tech-stack">
-                    <h3>Technologies</h3>
-                    <ul>
-                        <li>React</li>
-                        <li>Material-UI</li>
-                    </ul>
+                <div class="hr-break-1"></div>
+                <!-- Project 2 -->
+                <div class="project2">
+                    <h3>In the Pan</h3>
+                    <a href="http://inthepan-app.surge.sh/" target="_blank">
+                        <img class="project-image" src="images/inThePan.jpg" alt="In the Pan photo">
+                    </a>
+                    <a href="https://github.com/chingu-voyages/v8-geckos-team-11" target="_blank">
+                        <p>Github Repo</p>
+                    </a>
                 </div>
-            </div>
+                <div class="project2-desc">
+                    <h3>Summary</h3>
+                    <p><i>In the Pan</i> is a recipe finder that will help generate ideas for your next meal.</p>
+                    <div class="tech-stack">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>Vue JS</li>
+                            <li>Edamam API</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hr-break-2"></div>
+                <!-- Project 3 -->    
+                <div class="project3">
+                    <h3>Chirpper</h3>
+                    <a href="https://chingu-chirpper.herokuapp.com/timeline/chingu" target="_blank">
+                        <img class="project-image" src="images/chirpper.jpg" alt="Chirpper photo">
+                    </a>
+                    <a href="https://github.com/chingu-voyage5/Geckos-Team-16" target="_blank">
+                        <p>Github Repo</p>
+                    </a>
+                </div>
+                <div class="project3-desc">
+                    <h3>Summary</h3>
+                    <p><i>Chirpper</i> is a social media platform allowing users to start and share a dialogue.</p>
+                    <div class="tech-stack">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>Mongo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hr-break-3"></div>
+                <!-- Project 4 -->
+                <div class="project4">
+                    <h3>The Color Game</h3>
+                    <a href="https://simonxcode.github.io/colorGame/" target="_blank">
+                        <img class="project-image" src="images/colorGame.jpg" alt="color game photo">
+                    </a>
+                    <a href="https://github.com/simonxcode/colorGame" target="_blank"> 
+                        <p>Github Repo</p>
+                    </a>
+                </div>
+                <div class="project4-desc">
+                    <h3>Summary</h3>
+                    <p>A color matching game utilizing the RGB color model.</p>
+                    <div class="tech-stack">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hr-break-4"></div> 
             <div id="contact" class="contact">
                 <h3 class="heading">CONTACT</h3>
                 <p>Email: simonxiong11@gmail.com</p>
@@ -115,11 +144,12 @@
                         <i class="fas fa-coffee"></i>
                     </li>
                     <li>
-                        &copy 2018 simonxcode
+                        &copy 2019 simonxcode
                     </li>
                 </ul>
             </div>
-        </div><!-- wrapper end -->
+        </div>
+        <!-- wrapper end -->
     </body>
     <script src="portfolio.js"></script>
 </html>
