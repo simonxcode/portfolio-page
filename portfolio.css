@@ -19,6 +19,8 @@ body {
         "project2 project2-desc"
         "hr-break-2 hr-break-2"  
         "project3 project3-desc"
+        "hr-break-3 hr-break-3"  
+        "project4 project4-desc"
         "contact contact"
         "footer footer"
 }
@@ -83,6 +85,10 @@ a:visited {
         "hr-break-2"  
         "project3"
         "project3-desc"
+        "project3-desc"
+        "hr-break-3" 
+        "project4"
+        "project4-desc"
         "contact"
         "footer"
     }
@@ -175,6 +181,13 @@ a:visited {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75), rgba(0, 0, 0, 0));
 }
 
+.hr-break-3 {
+    grid-area: hr-break-3;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75), rgba(0, 0, 0, 0));
+}
+
 .project2 { 
     grid-area: project2;
 }
@@ -188,6 +201,14 @@ a:visited {
 
 .project3-desc {
     grid-area: project3-desc;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+.project4-desc {
+    grid-area: project4-desc;
 }
 
 .contact {
