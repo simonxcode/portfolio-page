@@ -12,7 +12,8 @@ body {
     grid-template-areas:
         "navbar navbar"
         "hero hero"
-        "profile about"
+        "profile-head profile-head"
+        "profile-photo about"
         "project-head project-head"
         "project1 project1-desc"
         "hr-break-1 hr-break-1"
@@ -40,7 +41,7 @@ body {
 }
 
 .nav a {
-    display: inline-block; /* too keep a tags in order */
+    display: inline-block; /* to keep a tags in order */
     padding: 1.5em;
     text-decoration: none; 
     font-weight: bold;
@@ -68,13 +69,19 @@ a:visited {
     display: none; 
 }
 
+.anchor {
+    padding-top: 80px; 
+    margin-top: -80px;
+}
+
 @media(min-width: 320px) and (max-width: 640px) { 
     .grid-container {
         display: grid;
         grid-template-columns: 100%;
         grid-template-areas:
         "navbar"
-        "profile"
+        "profile-head"
+        "profile-photo"
         "about"
         "project-head"
         "project1"
@@ -93,15 +100,12 @@ a:visited {
         "footer"
     }
     .nav a:not(:first-child) {
-        display: none;  /* hide all link beside brand when screen is lesss than 550 px */
+        display: none;  /* hide all link beside brand when screen is lesss than 640 px */
     }
     .nav a.icon {
         color: #33334d;
         float: right;
         display: block; /* show hamburger icon */
-    }
-    .profile {
-        margin-top: 175px; /* properly align profile with navbar */
     }
     .nav.responsive {
         position: fixed;
@@ -119,14 +123,21 @@ a:visited {
     .grid-container {
         height: 100vh;
     } 
-}
+    .profile-head {
+        padding-bottom: 120px;
+    }
+}   
 
 .hero {
     grid-area: hero;
 }
 
-.profile {
-    grid-area: profile;
+.profile-head {
+    grid-area: profile-head;
+}
+
+.profile-photo {
+    grid-area: profile-photo;
     background-color: lightgray;
 }
 
@@ -289,7 +300,6 @@ p {
 .fa-twitter:hover {
     color: lightskyblue
 }
-
 
 
 
