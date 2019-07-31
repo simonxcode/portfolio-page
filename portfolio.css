@@ -73,6 +73,10 @@ a:visited {
     padding-top: 80px; 
     margin-top: -80px;
 }
+/*selector to hide x icon*/
+.nav .fa-times {
+    display: none;
+} 
 
 @media(min-width: 320px) and (max-width: 640px) { 
     .grid-container {
@@ -99,30 +103,47 @@ a:visited {
         "contact"
         "footer"
     }
+
     .nav a:not(:first-child) {
         display: none;  /* hide all link beside brand when screen is lesss than 640 px */
     }
+
     .nav a.icon {
         color: #33334d;
         float: right;
         display: block; /* show hamburger icon */
     }
+
     .nav.responsive {
         position: fixed;
     }
+
     .nav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     .nav.responsive a {
         float: none;
         display: block;
         text-align: left;
     }  
+
+    /* selector to hide hamburger icon */
+    .nav.responsive .fa-bars {
+        display: none;
+    }
+
+    /* selector to show x icon*/
+    .nav.responsive .fa-times {
+        display: block;
+    }
+
     .grid-container {
         height: 100vh;
     } 
+
     .profile-head {
         padding-bottom: 120px;
     }
@@ -206,6 +227,7 @@ a:visited {
 .project2-desc {
     grid-area: project2-desc;
 }
+
 .project3 {
     grid-area: project3;
 }
@@ -292,6 +314,7 @@ p {
 .fa-envelope:hover {
     color: lightskyblue
 }
+
 .fa-linkedin-in:hover {
     color: lightskyblue
 }
@@ -303,8 +326,6 @@ p {
 .fa-twitter:hover {
     color: lightskyblue
 }
-
-
 
 
 
